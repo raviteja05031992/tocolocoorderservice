@@ -29,7 +29,7 @@ public class TocoOrderService {
             totalTacos += item.getQuantity();
         }
 
-        // Apply a 20% discount if 4 or more tacos are ordered
+        // logic for 20% discount if 4 or more tacos are ordered
         if (totalTacos >= 4) {
             totalPrice = totalPrice - (totalPrice * 20 / 100);
         }
